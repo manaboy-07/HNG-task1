@@ -2,10 +2,16 @@
 
 import React from "react";
 import Links from "./Links";
+import Slack from "../images/slack.svg";
+import Github from "../images/Icon.svg";
 function LinkProps() {
   return (
     <div className='link-container'>
-      <Links name='Twitter Link' id='twitter' link='https://twitter.com/Mana_boy07' />
+      <Links
+        name='Twitter Link'
+        id='twitter'
+        link='https://twitter.com/Mana_boy07'
+      />
       <Links
         name='Zuri Team'
         id='btn__zuri'
@@ -27,6 +33,10 @@ function LinkProps() {
         id='book__design'
         link='https://books.zuri.team/design-rules'
       />
+      <div className='icons'>
+        <img src={Slack} alt='' />
+        <img src={Github} alt='' />
+      </div>
     </div>
   );
 }
