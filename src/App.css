@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  width: 100%;
+  height: 45px;
+  margin: 10px 0;
+  padding: 30px 10px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+
+  gap: 8px;
+
+  background: #eaecf0;
+
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  color: #101828;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: #101828;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-container {
+  display: flex;
+  margin: 22px 0;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  font-weight: bolder;
+  font-size: 25px;
+}
+#slack{
+  display: none;
+}
+.profile-container > img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 88px;
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
