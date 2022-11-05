@@ -76,6 +76,7 @@ function Contact() {
               <label htmlFor='message'>Message</label>
               <textarea
                 id='message'
+                placeholder="Send me a message and i will reply you as soon as possible"
                 onChange={handleChange}
                 name='message'
                 value={formData.message}
