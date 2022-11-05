@@ -4,6 +4,7 @@ import React from "react";
 import Links from "./Links";
 import Slack from "../images/slack.svg";
 import Github from "../images/Icon.svg";
+import { Link } from "react-router-dom";
 function LinkProps() {
   return (
     <div className='link-container'>
@@ -17,27 +18,42 @@ function LinkProps() {
         name='Zuri Team'
         id='btn__zuri'
         link='https://training.zuri.team/'
-        title="The Zuri Team"
+        title='The Zuri Team'
       />
-      <Links name='Zuri Books' id='books' link='http://books.zuri.team' title="Books on Design and Coding by zuri"/>
+      <Links
+        name='Zuri Books'
+        id='books'
+        link='http://books.zuri.team'
+        title='Books on Design and Coding by zuri'
+      />
       <Links
         name='Python Books'
         id='book__python'
         link='https://books.zuri.team/python-for-beginners?ref_id=Oruebor Manasseh'
-        title="Find books about design and coding"
+        title='Find books about design and coding'
       />
       <Links
         name='Background Check for Coders'
         id='pitch'
         link='https://background.zuri.team'
-        title="Coders Background Check"
+        title='Coders Background Check'
       />
       <Links
         name='Design Book'
         id='book__design'
         link='https://books.zuri.team/design-rules'
-        title="free design books offered by Zuri."
+        title='free design books offered by Zuri.'
       />
+      <button>
+        <Link
+          to='/contact'
+          className='contact-link'
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          }}>
+          Contact Me
+        </Link>
+      </button>
       <div className='icons'>
         <img src={Slack} alt='' />
         <img src={Github} alt='' />

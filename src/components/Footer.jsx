@@ -5,7 +5,10 @@ import Zuri from "../images/zuri.svg";
 import World from "../images/I4G.svg";
 function Footer() {
   return (
-    <section className='footer'>
+    <div className="footer-whole">
+      <hr />
+      <section className='footer'>
+      
       <div>
         <img src={Zuri} alt='' />
       </div>
@@ -16,6 +19,7 @@ function Footer() {
         <img src={World} alt='' />
       </div>
     </section>
+    </div>
   );
 }
 
