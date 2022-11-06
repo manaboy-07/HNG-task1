@@ -47,6 +47,7 @@ function LinkProps() {
       <button>
         <Link
           to='/contact'
+          id="contact"
           className='contact-link'
           onClick={() => {
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
